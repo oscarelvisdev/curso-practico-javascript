@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin          : 0;
+  padding         : 0;
+  font-family     : 'Roboto', sans-serif;
+  width           : 100%;
+  height          : 100vh;
+  background-color: #15202b;
+  display         : flex;
+  align-items     : center;
+  justify-content : center;
+}
+
+.form-container {
+  width                : 95%;
+  height               : 90vh;
+  background-color     : white;
+  border-radius        : 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius   : 10px;
+  -ms-border-radius    : 10px;
+  -o-border-radius     : 10px;
+  overflow             : hidden;
+  
+  display: flex;
+  align-items: center;
+}
+
+.log-container {
+  flex-grow: 1;
+  margin: 0 auto;
+  padding: 0 16px;
+  max-width: 500px;
+}
+
+.log-container > h2 {
+  text-align: center;
+  font-size : 1.6rem;
+}
+
+.log-container > p,
+.log-container span {
+  text-align: center;
+  color     : #555;
+}
+
+.log-container label {
+  display    : block;
+  padding    : 5px 0;
+  font-weight: bold;
+}
+.log-container .input-text {
+  border               : solid 1px #ccc;
+  border-radius        : 5px;
+  width                : 100%;
+  padding              : 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius   : 5px;
+  -ms-border-radius    : 5px;
+  -o-border-radius     : 5px;
+}
+.log-container .input-text:focus {
+  outline: solid 2px #0099ff;
+}
+.check-box {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+}
+.check-box a {
+  padding-left: 10px;
+  color          : #0099ff;
+  text-decoration: none;
+}
+.check-box a:hover {
+  text-decoration: underline;
+}
+.providers {
+  margin-top: 30px;
+}
+
+.providers .btn {
+  margin-top: 10px;
+}
+
+.btn {
+  display              : block;
+  width                : 100%;
+  border               : none;
+  padding              : 16px 0;
+  border-radius        : 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius   : 5px;
+  -ms-border-radius    : 5px;
+  -o-border-radius     : 5px;
+  font-family          : inherit;
+  font-weight          : bolder;
+  text-transform       : uppercase;
+  cursor               : pointer;
+}
+
+.btn.btn-login {
+  color           : #fff;
+  background-color: #000;
+}
+.btn.btn.btn-login:hover {
+  background-color: #333;
+}
+
+.btn.btn-facebook {
+  color           : #fff;
+  background-color: #1877f2;
+}
+.btn.btn-facebook:hover {
+  background-color: #1168da;
+}
+
+.btn.btn-google {
+  border          : solid 1px #ccc;
+  background-color: #bdbdbd;
+}
+.btn.btn-google:hover {
+  background-color: #afabab;
+}
+
+.btn.btn-twitter {
+  background-color: #1d9bf0;
+  color           : white;
+}
+.btn.btn-twitter:hover {
+  background-color: #27a4f8;
+  color           : white;
+}
+
+
+.form-container .welcome-screen-container {
+  display: none;
+  background-color: #000;
+  height          : 100%;
+  width           : 50%;
+}
+
+.form-container .welcome-screen-container img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+@media (min-width: 1024px) {
+  .log-container {
+    width: 50%;
+  }
+  
+  .form-container .welcome-screen-container {
+    display: block;
+  }
+}
